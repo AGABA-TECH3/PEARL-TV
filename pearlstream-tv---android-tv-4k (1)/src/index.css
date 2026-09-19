@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+  
+  /* Hide scrollbar for TV rails while allowing smooth scrolling */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* TV Focus Glow Animations */
+@keyframes tvPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 3px #F59E0B, 0 10px 25px -5px rgba(245, 158, 11, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 4px #FBBF24, 0 15px 30px -5px rgba(245, 158, 11, 0.6);
+  }
+}
+
+.tv-focused {
+  animation: tvPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  transform: scale(1.05);
+  z-index: 30;
+}
+

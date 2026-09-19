@@ -1,0 +1,6 @@
+{
+  "name": "PearlStream TV - Android TV 4K",
+  "description": "Android TV 4K streaming application with live sports, Ugandan local channels, offline downloads, and personalized recommendations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
